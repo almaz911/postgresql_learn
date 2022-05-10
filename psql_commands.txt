@@ -1,0 +1,76 @@
+1. БД - это хранение структурированных данных 
+
+СУБД - это система управления БД
+
+SQL / NoSQL - sql бд отличия в том, что имеет отношения между таблицами (объектами), NoSQL - не имеет отношений
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+CЫРЫЕ SQL ЗАПРОСЫ:
+
+create database name_database; - cоздание БД
+
+create database name_database with owner role_name - с правом обладателя
+
+create role name_role with (extension) - создание роли
+
+drop database name_database; - удаление БД
+
+drop role role_name; - удаление роли
+
+\c database_name ----> соединение (connection)
+
+\d, \dt  -  команды, которые показывают какие таблицы имеются в БД
+
+\d table_name - показывает структуру таблицы 
+
+create table table_name(
+    name_field      type_field      constrain(blank)
+)
+
+insert into name_table (name_field, ... ) values('write_data', ...);
+
+select from field's (* | all) from table_name;
+
+select field from table_name where name_field = 'something';
+
+select * from table where field = 'some1' and field2 = 'some1';
+
+select * from table where field = 'some' or field2 = 'some2';
+
+select * from table limit int; first_limit_obj;
+
+select * from table offset int;
+
+select * from table offset int limit int;
+
+select * from table_name where field in ('some', 'some1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -52,6 +52,42 @@ select * from table_name where field in ('some', 'some1');
 
 
 
+aggregate function
+
+
+avg, count, sum, max, min
+
+select count(*) from table_name;
+
+select avg(field) from table_name; (sum, max, min)
+
+select count(*), field_name from table_name group by field_name1;
+
+select count(*), field_name from table_name group by field_name1 having count(*) > int;
+
+select * from table where not field = 'some';
+
+select * from table where field !=(<>) 'some';
+
+select * from table where field is null;
+
+select field as new_field1 from table;
+
+select * from table order by field(default=ASC) DESC;
+
+select * from table where field beetween 'some1' and 'some2' limit 2;
+
+select * from table where field beetween like '%some1' and ilike '%some2%' limit 2;
+
+select distinct field from table; - > return unique
+
+update table set field = 'new_value' where id = 1;
+
+
+
+
+
+
 
 
 
